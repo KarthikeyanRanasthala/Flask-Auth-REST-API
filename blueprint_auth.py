@@ -23,7 +23,7 @@ def register_user():
         password_hash = generate_hash(user_password, password_salt)
 
         if db_write(
-            """INSERT INTO users VALUES (%s, %s, %s)""",
+            """INSERT INTO users (email, password_salt, password_hash) VALUES (%s, %s, %s)""",
             (user_email, password_salt, password_hash),
         ):
             return Response(status=201)
