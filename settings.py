@@ -11,5 +11,3 @@ MYSQL_DB = os.getenv("MYSQL_DB")
 
 # JWT Config
 JWT_SECRET_KEY = os.getenv("JWT_SECRET_KEY")
-
-print(JWT_SECRET_KEY)
