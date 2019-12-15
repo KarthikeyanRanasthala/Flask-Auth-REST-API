@@ -81,6 +81,8 @@ def validate_user(email, password):
             user_id = current_user[0]["id"]
             jwt_token = generate_jwt_token({"id": user_id})
             return jwt_token
+        else:
+            return False
 
     else:
         return False
