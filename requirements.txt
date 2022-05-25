@@ -15,7 +15,7 @@ MarkupSafe==1.1.1
 mccabe==0.6.1
 mysqlclient==1.4.6
 pathspec==0.6.0
-PyJWT==1.7.1
+PyJWT==2.4.0
 pylint==2.4.4
 PyMySQL==0.9.3
 python-dotenv==0.10.3
